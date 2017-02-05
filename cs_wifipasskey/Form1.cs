@@ -151,14 +151,15 @@ namespace wifi万能钥匙
             }
 
             ListViewItem item =listView1.SelectedItems[0];
+            String name = item.SubItems[0].Text;
             String mac = item.SubItems[1].Text;
 
-            MessageBox.Show("mac is " + mac);
+            //MessageBox.Show("mac is " + mac + ", name is " + name);
 
 
 
 
-            String password = WifiPass.getPassword(mac);
+            String password = WifiPass.getPassword(name,mac);
             if (password != null) {
                 item.SubItems[3].Text = password;
             }
