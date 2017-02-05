@@ -1,3 +1,7 @@
-wifi万能钥匙
+## wifi万能钥匙
 
 使用到的库http://managedwifi.codeplex.com/
+
+命中率不高:
+
+![examples](1.png "examples")
